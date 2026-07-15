@@ -73,7 +73,7 @@
 }
 
 .contacts .avenue__gray, .contacts .cloisters__gray, .contacts .breuer__gray {
-  color: gray;
+  color: #333;
 }
 
 .contacts .avenue__content, .contacts .cloisters__content, .contacts .breuer__content {
@@ -524,7 +524,7 @@
 .header {
   z-index: 1;
   color: #fff;
-  background-image: url("header-mobile.0a238e08.png");
+  background-image: url("header-mobile.fd1cc9af.jpg");
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -881,7 +881,6 @@ html.is-menu-open, html.is-menu-open body {
 
 .top-bar__icons {
   align-items: center;
-  gap: 20px;
   display: flex;
 }
 
