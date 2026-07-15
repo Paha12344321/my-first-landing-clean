@@ -1,0 +1,121 @@
+.gallery {
+  position: relative;
+
+  overflow: visible;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+  .card__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+
+  .gallery__photo-wrapper {
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .gallery__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .gallery__caption {
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
+  .gallery__title {
+    margin-bottom: 4px;
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 700;
+    color: #D12D35;
+  }
+
+  .paragraph-title {
+    margin-bottom: 40px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: #161616;
+    text-align: center;
+  }
+
+  .gallery__category {
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+
+  &__photos__first,
+  &__photos__third,
+  &__photos__second {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 768px) {
+    .card__images {
+      gap: 12px;
+    }
+
+    .gallery__title {
+      font-size: clamp(16px, 3vw, 20px);
+    }
+
+    .gallery__category {
+      font-size: clamp(12px, 2.5vw, 16px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card__images {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+}
+
+.exhibitions__button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.exhibitions__button {
+  display: inline-block;
+
+  padding: 12px 48px;
+  border: 1px solid #b42a2a;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  background-color: #b42a2a;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #b42a2a;
+    background-color: transparent;
+  }
+}

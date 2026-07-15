@@ -1,0 +1,50 @@
+.section-title {
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  @include on-tablet {
+    margin-bottom: 64px;
+    font-size: 40px;
+  }
+
+  @include on-desktop {
+    font-size: 48px;
+  }
+  &--align--left {
+    text-align: left;
+    text-align-last: left;
+  }
+
+  &--top {
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
+    color: #D12D35;
+    word-spacing: 2px;
+  }
+
+  &___content{
+
+
+
+    &--days {
+      margin: 0;
+      list-style: none;
+    }
+
+    &--gray {
+      color: #6D6D6D;
+    }
+  }
+}
+
+

@@ -1,0 +1,41 @@
+.icon {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
+
+  &--phone {
+    background-image: url(../icon/Vector.png);
+  }
+
+  &--menu {
+    background-image: url(../icon/menu.png);
+
+    // &:hover {
+    // можно изменить иконку при ховере
+    // background-image: url(../icon/menu-hover.png);
+    // }
+  }
+
+  &--close {
+    cursor: pointer;
+
+    position: static;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+
+    background-image: url(../close/Close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

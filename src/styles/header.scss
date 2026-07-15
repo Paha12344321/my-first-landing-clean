@@ -1,0 +1,54 @@
+.header {
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  padding: 0 120px;
+
+  color: white;
+
+  background-image: url(../images/header-mobile.png);
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 100%;
+
+
+
+
+  }
+  &__bottom{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    padding: 0;
+    padding-top: 83px;
+
+
+
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 28px;
+  }
+}
+
+

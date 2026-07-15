@@ -1,0 +1,19 @@
+.title {
+  margin: 0;
+
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+
+  @include on-tablet {
+    font-size: 40px;
+  }
+
+  @include on-desktop {
+    font-size: 80px;
+  }
+
+}
